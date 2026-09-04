@@ -106,7 +106,20 @@ h2{
 @media(max-width:640px){.job-head .date{margin-left:0;width:100%}}
 
 /* ---------- projects ---------- */
+/* ---------- projects ---------- */
 .projects{display:grid;gap:16px}
+
+/* ADD THIS NEW BLOCK */
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+/* END NEW BLOCK */
+
 .card{
   background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;
   transition:border-color .2s ease,transform .2s ease;
@@ -281,6 +294,8 @@ footer .built{margin-left:auto}
       </article>
 
       <article class="card reveal">
+        <img src="qibrah-preview.png" alt="Preview of Qibrah app" class="card-img" />
+        
         <div class="card-head">
           <h3>Qibrah</h3>
         </div>
