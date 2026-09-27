@@ -4,26 +4,28 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Chowdhury Md Rajib Sarwar — Senior iOS Engineer</title>
-<meta name="description" content="Senior iOS Engineer with 10+ years of experience architecting resilient, high-performance mobile systems across enterprise and consumer domains." />
+<meta name="description" content="Senior iOS Engineer with 10+ years in mobile architecture, offline synchronization, and performance. Explore 200+ enterprise apps, Qibrah, and the award-winning DANA project." />
 <meta name="theme-color" content="#fafafa" />
 <meta property="og:title" content="Chowdhury Md Rajib Sarwar — Senior iOS Engineer" />
-<meta property="og:description" content="Senior iOS Engineer specializing in offline-first synchronization, concurrent data pipelines, and legacy modernization." />
+<meta property="og:description" content="10+ years building enterprise and consumer iOS apps. Mobile architecture for 200+ apps, independent App Store releases, and award-winning team leadership." />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://rajib-sarwar.github.io/" />
+<link rel="canonical" href="https://rajib-sarwar.github.io/" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23111'/><text y='68' x='50' text-anchor='middle' font-size='54' font-family='Georgia,serif' fill='%23fafafa'>C</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
 :root{
-  --bg:#fafafa; --panel:#ffffff; --ink:#141414; --muted:#5f5f5f; --faint:#8a8a8a;
+  --bg:#fafafa; --panel:#ffffff; --ink:#141414; --muted:#5f5f5f; --faint:#6b6b6b;
   --line:#e6e4e0; --accent:#1a5c4a; --accent-soft:#eef4f1; --chip:#f2f1ee;
   --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --serif:"Newsreader",Georgia,"Times New Roman",serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --maxw:720px;
+  --maxw:980px;
 }
 html[data-theme="dark"]{
-  --bg:#0f0f0f; --panel:#151515; --ink:#ececec; --muted:#a0a0a0; --faint:#767676;
+  --bg:#0f0f0f; --panel:#151515; --ink:#ececec; --muted:#a0a0a0; --faint:#a0a0a0;
   --line:#262626; --accent:#7fd1b3; --accent-soft:#14231e; --chip:#1c1c1c;
 }
 *{box-sizing:border-box}
@@ -109,7 +111,7 @@ h2{
 /* ---------- projects ---------- */
 .projects{display:grid;gap:16px}
 
-/* ADD THIS NEW BLOCK */
+
 .card-img {
   width: 100%;
   height: auto;
@@ -118,7 +120,7 @@ h2{
   object-fit: cover;
   border: 1px solid var(--line);
 }
-/* END NEW BLOCK */
+
 
 .card{
   background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;
@@ -161,269 +163,226 @@ footer{
 footer .built{margin-left:auto}
 
 /* ---------- entrance ---------- */
-.reveal{opacity:0;transform:translateY(12px)}
+.reveal{opacity:1;transform:none}
 .reveal.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
 @media(prefers-reduced-motion:reduce){
   .reveal,.reveal.in{opacity:1;transform:none;transition:none}
   html{scroll-behavior:auto}
   .pulse{animation:none}
 }
+
+.hero{padding:64px 0 48px}
+.hero h1{font-size:clamp(38px,6vw,66px);max-width:16ch;margin-bottom:20px;line-height:1.06}
+.hero .intro{font-size:clamp(20px,3vw,25px);line-height:1.5;color:var(--ink);max-width:40ch}
+.hero .eyebrow{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 22px}
+.hero .links{margin-top:26px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px;padding-top:24px;border-top:1px solid var(--line)}
+.metric strong{display:block;font:500 clamp(28px,4vw,40px) var(--serif);color:var(--accent)}
+.metric span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+.award{padding:26px 0 28px;border-top:2px solid var(--accent);border-bottom:1px solid var(--line)}
+.award .eyebrow{font:500 11px var(--mono);letter-spacing:.1em;color:var(--accent);text-transform:uppercase;margin:0 0 10px}
+.award h2{font:500 25px/1.3 var(--serif);text-transform:none;letter-spacing:0;color:var(--ink);margin:0 0 8px}
+.award p{margin:0 0 8px;font-size:14px;color:var(--muted);max-width:78ch}
+.text-link{color:var(--accent);text-underline-offset:4px;font-size:14px}
+.award .award-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin:14px 0 0}
+section{padding:48px 0}
+.job{padding:25px 0}
+.job:first-of-type{padding-top:0}
+.job-head h3{font-size:18px}
+.job-title{font-size:15px;color:var(--ink);margin:3px 0}
+.job-location{font-size:13px;color:var(--muted);margin:0}
+.job-head .date{color:var(--muted)}
+.job li{max-width:88ch;margin-bottom:10px}
+.job li strong{font-weight:600;color:var(--ink)}
+.job .recognition{font-size:14px;color:var(--accent);font-weight:600;margin:14px 0 0}
+.card .project-type{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:10px}
+.card h3{font:500 30px var(--serif)}
+.card .case-list{padding-left:19px;margin:18px 0;font-size:15px;color:var(--muted)}
+.card .case-list li{margin:0 0 9px}
+.card .case-list strong{color:var(--ink);font-weight:600}
+.card .links{margin:20px 0}
+.card-img{display:block;margin:24px 0 0}
+.secondary-projects{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.education h3{margin:0 0 6px;font-size:16px}.education p{margin:0;color:var(--muted);font-size:14px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+@media(max-width:640px){
+ .hero{padding-top:42px}.hero h1{font-size:44px}.nav{justify-content:space-between}
+ .nav ul{gap:22px}.toggle{margin-left:auto}.metrics{gap:14px}.metric span{font-size:12px}
+ .secondary-projects,.education{grid-template-columns:1fr}.card{padding:20px}.award h2{font-size:23px}
+ .job-head{display:block}.job-head .date{display:block;margin-top:5px}
+}
+@media(prefers-reduced-motion:reduce){.card,.btn{transition:none}.card:hover,.btn:hover{transform:none}}
+@media print{header,.toggle,.skip{display:none}section{padding:20px 0}.hero{padding:0}.card{break-inside:avoid}.card-img{max-width:400px}.job{break-inside:avoid}body{background:white;color:black}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
 <header id="site-header">
-  <nav class="nav" aria-label="Primary">
-    <a class="brand" href="#top">Chowdhury Md Rajib Sarwar</a>
-    <ul>
-      <li><a class="link" href="#top">Home</a></li>
-      <li><a class="link" href="#experience">Experience</a></li>
-      <li><a class="link" href="#projects">Projects</a></li>
-      <li><a class="link" href="#stack">Stack</a></li>
-      <li><a class="link" href="#contact">Contact</a></li>
-    </ul>
-    <button class="toggle" id="theme" type="button" aria-label="Toggle dark mode">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path id="icon-path" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-    </button>
-  </nav>
+ <nav class="nav" aria-label="Primary">
+  <a class="brand" href="#top">Rajib Sarwar</a>
+  <ul>
+   <li><a class="link" href="#experience">Experience</a></li>
+   <li><a class="link" href="#projects">Projects</a></li>
+   <li><a class="link" href="#stack">Expertise</a></li>
+   <li><a class="link" href="#contact">Contact</a></li>
+  </ul>
+  <button class="toggle" id="theme" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+   <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path id="icon-path" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+  </button>
+ </nav>
 </header>
-
 <main id="main">
-  <section class="hero" id="top">
-    <span class="avail"><span class="pulse"></span> Senior iOS Engineer</span>
-    <h1>I architect resilient, high-performance mobile systems across enterprise and consumer domains.</h1>
-    <p>I am a Senior iOS Engineer with 10+ years of experience. I specialize in <strong>offline-first synchronization, concurrent data pipelines, legacy modernization, and low-level device integrations.</strong></p>
-    <p>Currently, I am leading mobile architecture for a highly scalable white-label ecosystem powering 200+ client applications.</p>
-    <div class="meta">
-      <span><span class="dot"></span> Swift · Objective-C · Kotlin</span>
-      <span><span class="dot"></span> SwiftUI · UIKit · Cocoa Touch</span>
-      <span><span class="dot"></span> C++ Interoperability</span>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <article class="job reveal">
-      <div class="job-head">
-        <h3>Limosys LLC</h3>
-        <span class="role">Senior Software Engineer, iOS</span>
-        <span class="date">Jan 2023 — Present</span>
-      </div>
-      <ul>
-        <li>Architected a dynamic, server-driven configuration pipeline to replace a fragmented, hard-coded white-label ecosystem, reducing new client application deployment steps by 75% (from 20 to 5) across 200+ enterprise apps.</li>
-        <li>Spearheaded the modernization of legacy Objective-C MVC monoliths into a modular Swift MVVM architecture, integrating secure WKWebView JavaScript bridges and migrating decentralized client assets to a unified Amazon S3 infrastructure.</li>
-        <li>Engineered an offline-first data synchronization layer for the driver application, utilizing local database persistence and background processing to ensure zero data loss for critical GPS tracking and signature captures during network outages.</li>
-        <li>Rescued a stalled third-party hardware integration by collaborating directly with Worldpay engineers to debug and stabilize a Bluetooth-connected triPOS SDK, implementing comprehensive diagnostic logging to successfully deploy in-car payments.</li>
-        <li>Currently architecting a high-frequency real-time GPS map-matching pipeline utilizing GraphHopper and Hazelcast in-memory computing to process 10-second location pings and snap raw coordinate data to road networks for precise fleet routing.</li>
-        <li>Designed and implemented a modernized Android counterpart utilizing Kotlin, Jetpack Compose, and MVVM, establishing cross-platform architectural parity and stability across the driver ecosystem.</li>
-      </ul>
+ <section class="hero" id="top" aria-labelledby="name">
+  <p class="eyebrow">Senior iOS Engineer · 10+ years in mobile</p>
+  <h1 id="name">Chowdhury Md<br>Rajib Sarwar</h1>
+  <p class="intro">I build dependable iOS apps for enterprise teams and everyday users.</p>
+  <p>My focus is mobile architecture, offline synchronization, and performance. At <strong>Limosys</strong>, I lead mobile architecture for a white-label ecosystem of <strong>200+ apps</strong>. I also build and ship my own products, including <strong>Qibrah</strong>.</p>
+  <div class="links">
+   <a class="btn primary" href="Rajib_Sarwar_Resume.pdf">View one-page resume <span aria-hidden="true">↗</span></a>
+   <a class="btn" href="mailto:md.rajib.sarwar@gmail.com">Get in touch</a>
+   <a class="btn" href="https://github.com/Rajib-Sarwar">GitHub <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="metrics" aria-label="Selected career results">
+   <div class="metric"><strong>200+</strong><span>Apps in the Limosys ecosystem</span></div>
+   <div class="metric"><strong>75%</strong><span>Fewer new-client deployment steps</span></div>
+   <div class="metric"><strong>10+ years</strong><span>Enterprise and consumer mobile work</span></div>
+  </div>
+ </section>
+ <aside class="award" aria-labelledby="award-title">
+  <p class="eyebrow">Project recognition · NJIT</p>
+  <h2 id="award-title">2023 Technology Innovation Award</h2>
+  <p><strong>NJLA CUS/ACRL-NJ · DANA mobile apps</strong></p>
+  <p>I led the mobile engineering team from concept to launch of the Digital Archive of Newark Architecture apps. The NJIT team's project received this recognition for technology innovation.</p>
+  <div class="award-links"><a class="text-link" href="#dana">Explore my contribution ↓</a><a class="text-link" href="https://www.njla.org/njal-awards">Official award record ↗</a><a class="text-link" href="NJLA%20Technology%20Innovation%20Award.jpeg">View award image ↗</a></div>
+ </aside>
+ <section id="experience" aria-labelledby="experience-title">
+  <h2 id="experience-title">Experience</h2>
+  <article class="job">
+   <div class="job-head"><h3>Limosys LLC</h3><span class="date">Jan 2023 — Present</span></div>
+   <p class="job-title">Senior Software Engineer, iOS</p><p class="job-location">Englewood Cliffs, NJ</p>
+   <ul>
+    <li><strong>Reduced deployment steps by 75%.</strong> Replaced hard-coded configuration across 200+ white-label apps with a server-driven pipeline, taking new-client deployment from 20 steps to 5.</li>
+    <li><strong>Modernized the iOS architecture.</strong> Migrated Objective-C MVC monoliths into modular Swift MVVM components, integrated WKWebView JavaScript bridges, and centralized client assets in Amazon S3.</li>
+    <li><strong>Kept driver workflows working through outages.</strong> Built offline persistence and background synchronization for GPS records and signature captures in LSN Driver.</li>
+    <li><strong>Unblocked in-car payments.</strong> Partnered with Worldpay engineers to debug the Bluetooth triPOS SDK and add diagnostic logging.</li>
+    <li><strong>Current work:</strong> designing a GraphHopper/Hazelcast map-matching pipeline to snap 10-second GPS updates to road networks for fleet routing.</li>
+    <li>Built an Android counterpart with Kotlin, Jetpack Compose, and MVVM to align architecture across the driver apps.</li>
+   </ul>
+  </article>
+  <article class="job" id="dana">
+   <div class="job-head"><h3>New Jersey Institute of Technology</h3><span class="date">Sep 2021 — Dec 2022</span></div>
+   <p class="job-title">Mobile Programmer / Team Lead</p><p class="job-location">Newark, NJ</p>
+   <p class="recognition">DANA mobile apps · 2023 NJLA CUS/ACRL-NJ Technology Innovation Award</p>
+   <ul>
+    <li><strong>Led the project from concept to launch.</strong> Coordinated iOS, Android, and UI/UX contributors to deliver mobile access to the Digital Archive of Newark Architecture.</li>
+    <li><strong>Connected 3 external APIs with university systems</strong> to power 4 location-aware features, including archive routing and community forums.</li>
+    <li>Mentored developers on UIKit, memory management, and state preservation; translated university stakeholders' requirements into mobile architecture.</li>
+   </ul>
+  </article>
+  <article class="job">
+   <div class="job-head"><h3>Affle <span class="role">(acquired Shoffr)</span></h3><span class="date">Jan 2017 — Sep 2021</span></div>
+   <p class="job-title">Engineering Manager, Mobile</p><p class="job-location">Singapore / Bengaluru, India</p>
+   <ul>
+    <li><strong>Led mobile architecture and iOS delivery for Shoffr.</strong> Built offline synchronization and retailer messaging to support inventory discovery and in-store footfall attribution.</li>
+    <li><strong>Designed and deployed the Vizury mobile SDK.</strong> Used background processing and offline caching to capture behavior and ad impressions within battery and CPU constraints.</li>
+   </ul>
+  </article>
+  <article class="job">
+   <div class="job-head"><h3>AnyConnect</h3><span class="date">Oct 2014 — Jul 2016</span></div>
+   <p class="job-title">Software Engineer, iOS</p><p class="job-location">Dhaka, Bangladesh / Singapore</p>
+   <ul>
+    <li><strong>Stabilized Philips uGrow video streaming.</strong> Fixed A/V rendering and memory issues and improved XMPP/raw-socket connections between the app and IoT cameras.</li>
+    <li><strong>Restored 60 fps UI performance</strong> by moving work off the main thread. Earned promotion and relocation from the Dhaka engineering center to Singapore.</li>
+   </ul>
+  </article>
+ </section>
+ <section id="projects" aria-labelledby="projects-title">
+  <h2 id="projects-title">Selected products</h2>
+  <div class="projects">
+   <article class="card">
+    <p class="project-type">Independent product · Available on the App Store</p>
+    <div class="card-head"><h3>Qibrah</h3></div>
+    <p>An iOS app for prayer times, Qibla direction, and Quran reading and listening. I designed, built, and launched it independently.</p>
+    <ul class="case-list">
+     <li><strong>Architecture:</strong> SwiftUI and MVVM with local persistence for offline reading progress and bookmarks.</li>
+     <li><strong>Audio:</strong> AVFoundation playback and Live Activities for an ongoing playback experience beyond the app screen.</li>
+     <li><strong>Speech:</strong> on-device Apple Speech recognition with a custom algorithm to synchronize text highlighting with audio progression.</li>
+    </ul>
+    <div class="tags"><span class="tag">SwiftUI</span><span class="tag">MVVM</span><span class="tag">AVFoundation</span><span class="tag">Apple Speech</span><span class="tag">Live Activities</span></div>
+    <div class="links"><a class="btn primary" href="https://apps.apple.com/us/app/qibrah/id6758562594">View Qibrah on the App Store ↗</a></div>
+    <a href="https://apps.apple.com/us/app/qibrah/id6758562594"><img src="qibrah_banner.png" alt="Qibrah app preview" class="card-img" loading="lazy" decoding="async"></a>
+   </article>
+   <div class="secondary-projects">
+    <article class="card">
+     <p class="project-type">Enterprise product · Limosys</p><div class="card-head"><h3>LSN Driver</h3></div>
+     <p>Driver workflows for GPS tracking, dispatch, signature capture, and payments. My work centers on offline continuity, background synchronization, and hardware integration.</p>
+     <div class="tags"><span class="tag">Swift</span><span class="tag">UIKit</span><span class="tag">Core Location</span><span class="tag">Bluetooth</span></div>
+     <div class="links"><a class="text-link" href="https://apps.apple.com/us/app/lsn-driver/id1629740207">View LSN Driver on the App Store ↗</a></div>
     </article>
-
-    <article class="job reveal">
-      <div class="job-head">
-        <h3>New Jersey Institute of Technology</h3>
-        <span class="role">Mobile Programmer / Team Lead</span>
-        <span class="date">Sep 2021 — Dec 2022</span>
-      </div>
-      <ul>
-        <li>Directed a cross-functional engineering team (iOS, Android, UI/UX) to architect and launch "The DANA Project" from zero-to-one, earning the 2023 NJLA Technology Innovation Award for outstanding digital accessibility.</li>
-        <li>Engineered a secure data-ingestion layer bridging siloed third-party APIs and institutional backend systems, ensuring strict data privacy and continuous state synchronization for the native mobile clients.</li>
-        <li>Mentored developers on advanced UIKit implementations, guiding technical decisions around iOS memory management, view lifecycles, and state preservation to guarantee a highly responsive, crash-free App Store release.</li>
-        <li>Acted as the primary technical liaison between university stakeholders and the engineering team, successfully translating complex web-archival constraints into a scalable, location-aware mobile architecture.</li>
-      </ul>
+    <article class="card">
+     <p class="project-type">Award-winning project · NJIT</p><div class="card-head"><h3>DANA</h3></div>
+     <p>Mobile access to Newark's architectural archive. I led the mobile team and integrated external APIs with university systems to support location-aware discovery.</p>
+     <div class="tags"><span class="tag">Team leadership</span><span class="tag">UIKit</span><span class="tag">API integration</span></div>
+     <div class="links"><a class="text-link" href="https://www.njla.org/njal-awards">View the 2023 award record ↗</a></div>
     </article>
-
-    <article class="job reveal">
-      <div class="job-head">
-        <h3>Affle (Acquired Shoffr)</h3>
-        <span class="role">Engineering Manager, Mobile</span>
-        <span class="date">Jan 2017 — Sep 2021</span>
-      </div>
-      <ul>
-        <li>Led end-to-end mobile product architecture for the Shoffr omnichannel (O2O) platform, partnering directly with the C-suite and external retail clients to deliver an iOS application that directly contributed to a successful Techstars seed funding round and eventual acquisition by Affle.</li>
-        <li>Engineered robust offline-first synchronization workflows and real-time customer-to-retailer communication protocols, enabling seamless in-store footfall attribution and inventory discovery through localized Arrival Code scanning.</li>
-        <li>Architected and deployed the proprietary Vizury mobile SDK across Affle's consumer intelligence network, implementing highly efficient background task management and offline data caching to track user behavior and ad impressions at scale.</li>
-        <li>Designed GDPR-compliant data collection and state management pipelines within the SDK, optimizing on-device resource constraints (battery and CPU) while enabling targeted omnichannel re-engagement via push notifications and messaging.</li>
-      </ul>
-    </article>
-
-    <article class="job reveal">
-      <div class="job-head">
-        <h3>AnyConnect</h3>
-        <span class="role">Software Engineer, iOS</span>
-        <span class="date">Oct 2014 — Jul 2016</span>
-      </div>
-      <ul>
-        <li>Stabilized the Philips uGrow application architecture by auditing and overhauling A/V rendering pipelines and memory management, resolving 1,000+ critical bugs to ensure continuous, crash-free video streaming.</li>
-        <li>Architected resilient networking layers utilizing persistent XMPP protocols and raw socket connections, significantly reducing stream latency and connection drops between the mobile client and IoT camera hardware.</li>
-        <li>Engineered efficient background data synchronization via push notifications to accurately maintain application state, while unblocking the main thread to restore 60fps UI performance.</li>
-        <li>Recognized for critical technical impact on the Philips project with a direct promotion and relocation from the Dhaka engineering center (Eyeball Networks) to the Singapore headquarters (AnyConnect).</li>
-      </ul>
-    </article>
-
-    <article class="job reveal">
-      <div class="job-head">
-        <h3>New Jersey Institute of Technology</h3>
-        <span class="role">Master of Science in Computer Science</span>
-        <span class="date">Sep 2021 — Dec 2022</span>
-      </div>
-    </article>
-    
-    <article class="job reveal">
-      <div class="job-head">
-        <h3>Ahsanullah University of Science and Technology</h3>
-        <span class="role">Bachelor of Science in Computer Science</span>
-        <span class="date">Sep 2010 — Aug 2014</span>
-      </div>
-    </article>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <article class="card reveal">
-        <div class="card-head">
-          <h3>LSN Driver App</h3>
-        </div>
-        <p>Engineered a mission-critical enterprise driver application supporting continuous, high-frequency GPS tracking, secure payment gateways, and bidirectional dispatch workflows.</p>
-        <div class="tags">
-          <span class="tag">Swift</span><span class="tag">UIKit</span><span class="tag">GPS</span><span class="tag">Payments</span><span class="tag">REST APIs</span><span class="tag">App Store</span>
-        </div>
-      </article>
-
-      <article class="card reveal">
-        <a href="https://apps.apple.com/app/qibrah/id6758562594" target="_blank" rel="noopener noreferrer">
-          <img src="qibrah_banner.png" alt="Preview of Qibrah app" class="card-img" />
-        </a>
-        
-        <div class="card-head">
-          <h3>Qibrah</h3>
-        </div>
-        <p>Architected and independently launched a comprehensive iOS utility application, utilizing a strict SwiftUI and MVVM pattern to deliver highly responsive, state-driven interfaces. Integrated AVFoundation for resilient audio playback, pairing it with modern iOS Live Activities and push notifications to maintain continuous background state and user engagement. Engineered an on-device Speech-to-Text pipeline utilizing Apple's Speech framework, implementing a custom real-time algorithm that synchronizes UI text highlighting with live audio progression. Designed a robust local persistence layer to manage complex application states, ensuring offline-capable session continuity for user reading progress and bookmarks.</p>
-        <div class="tags">
-          <span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">Speech Recognition</span><span class="tag">Live Activities</span><span class="tag">App Store</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="stack">
-    <h2>Stack</h2>
-    <div class="skills">
-      <div class="skillrow reveal">
-        <h4>Languages &amp; Core iOS</h4>
-        <div class="tags">
-          <span class="tag">Swift</span><span class="tag">Objective-C</span><span class="tag">Kotlin</span><span class="tag">SwiftUI</span><span class="tag">UIKit</span><span class="tag">Cocoa Touch</span><span class="tag">C++ (Interoperability)</span>
-        </div>
-      </div>
-      <div class="skillrow reveal">
-        <h4>Architecture &amp; Systems</h4>
-        <div class="tags">
-          <span class="tag">System Design</span><span class="tag">Server-Driven Configuration</span><span class="tag">MVVM</span><span class="tag">Clean Architecture</span><span class="tag">Dependency Injection</span><span class="tag">Protocol-Oriented Design</span><span class="tag">Offline-First Architecture</span>
-        </div>
-      </div>
-      <div class="skillrow reveal">
-        <h4>Concurrency &amp; Performance</h4>
-        <div class="tags">
-          <span class="tag">Swift Concurrency</span><span class="tag">GCD</span><span class="tag">Memory Management</span><span class="tag">Xcode Instruments</span><span class="tag">Render Loop</span><span class="tag">Main-Thread Optimization</span>
-        </div>
-      </div>
-      <div class="skillrow reveal">
-        <h4>Networking, Media &amp; DevOps</h4>
-        <div class="tags">
-          <span class="tag">REST APIs</span><span class="tag">WebSockets</span><span class="tag">Core Data</span><span class="tag">Distributed Caching</span><span class="tag">AVFoundation</span><span class="tag">Core Location</span><span class="tag">Bluetooth/SDKs</span><span class="tag">XCTest/XCUITest</span><span class="tag">CI/CD</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Reach me at <a href="mailto:md.rajib.sarwar@gmail.com">md.rajib.sarwar@gmail.com</a>.</p>
-    <div class="links">
-      <a class="btn" href="mailto:md.rajib.sarwar@gmail.com">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
-        Email
-      </a>
-      <a class="btn" href="Rajib_Sarwar_Resume.pdf" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V9Z"/></svg>
-        Résumé
-      </a>
-      <a class="btn" href="https://github.com/rajib-sarwar" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
-        GitHub
-      </a>
-      <a class="btn" href="https://linkedin.com/in/rajib-sarwar" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V9Z"/></svg>
-        LinkedIn
-      </a>
-      <a class="btn" href="tel:+19294624715">
-        <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
-        +1 (929) 462-4715
-      </a>
-    </div>
-  </section>
+   </div>
+  </div>
+ </section>
+ <section id="stack" aria-labelledby="stack-title">
+  <h2 id="stack-title">Technical expertise</h2>
+  <div class="skills">
+   <div class="skillrow"><h4>Native mobile</h4><div class="tags"><span class="tag">Swift</span><span class="tag">Objective-C</span><span class="tag">SwiftUI</span><span class="tag">UIKit</span><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">C++ interoperability</span></div></div>
+   <div class="skillrow"><h4>Architecture and data</h4><div class="tags"><span class="tag">MVVM</span><span class="tag">Dependency injection</span><span class="tag">Offline synchronization</span><span class="tag">Core Data</span><span class="tag">REST APIs</span></div></div>
+   <div class="skillrow"><h4>Concurrency and performance</h4><div class="tags"><span class="tag">Swift Concurrency</span><span class="tag">GCD</span><span class="tag">Xcode Instruments</span><span class="tag">Memory management</span><span class="tag">Crash analysis</span></div></div>
+   <div class="skillrow"><h4>Integrations and quality</h4><div class="tags"><span class="tag">Core Location</span><span class="tag">AVFoundation</span><span class="tag">Apple Speech</span><span class="tag">Bluetooth SDKs</span><span class="tag">XCTest</span><span class="tag">XCUITest</span><span class="tag">CI/CD</span></div></div>
+  </div>
+ </section>
+ <section aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  <div class="education">
+   <div><h3>MS in Computer Science</h3><p>New Jersey Institute of Technology<br>Dec 2022</p></div>
+   <div><h3>BS in Computer Science</h3><p>Ahsanullah University of Science and Technology<br>Aug 2014</p></div>
+  </div>
+ </section>
+ <section id="contact" class="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Let's build something useful</h2>
+  <p>I'm interested in senior iOS engineering opportunities where I can own architecture, improve reliability, and help a team ship useful products—including mobile experiences for AI-powered products.</p>
+  <p><a href="mailto:md.rajib.sarwar@gmail.com">md.rajib.sarwar@gmail.com</a></p>
+  <div class="links">
+   <a class="btn primary" href="mailto:md.rajib.sarwar@gmail.com">Email me</a>
+   <a class="btn" href="Rajib_Sarwar_Resume.pdf">One-page resume ↗</a>
+   <a class="btn" href="https://linkedin.com/in/rajib-sarwar">LinkedIn ↗</a>
+   <a class="btn" href="https://github.com/Rajib-Sarwar">GitHub ↗</a>
+   <a class="btn" href="tel:+19294624715">+1 (929) 462-4715</a>
+  </div>
+ </section>
 </main>
-
-<footer>
-  <span>© <span id="year">2026</span> Chowdhury Md Rajib Sarwar</span>
-</footer>
-
+<footer><span>© <span id="year">2026</span> Chowdhury Md Rajib Sarwar</span></footer>
 <script>
 (function () {
-  // theme
-  var root = document.documentElement;
-  var stored = null;
-  try { stored = localStorage.getItem('theme'); } catch (e) {}
-  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  setTheme(stored || (prefersDark ? 'dark' : 'light'));
-
-  function setTheme(t) {
-    root.setAttribute('data-theme', t);
-    var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', t === 'dark' ? '#0f0f0f' : '#fafafa');
-    var p = document.getElementById('icon-path');
-    if (p) p.setAttribute('d', t === 'dark'
-      ? 'M12 4v1m0 14v1m8-8h-1M5 12H4m13.7-5.7-.7.7M7 17l-.7.7m11.4 0-.7-.7M7 7l-.7-.7M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z'
-      : 'M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z');
-  }
-  document.getElementById('theme').addEventListener('click', function () {
-    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    setTheme(next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
-
-  // header border on scroll
-  var header = document.getElementById('site-header');
-  function onScroll() { header.classList.toggle('scrolled', window.scrollY > 8); }
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-
-  // reveal on enter
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-  document.querySelectorAll('.reveal').forEach(function (el, i) {
-    el.style.transitionDelay = (Math.min(i, 4) * 45) + 'ms';
-    io.observe(el);
-  });
-
-  // active nav link
-  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a.link'));
-  var sections = links.map(function (l) { return document.querySelector(l.getAttribute('href')); });
-  var spy = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      links.forEach(function (l) { l.classList.remove('active'); });
-      var idx = sections.indexOf(e.target);
-      if (idx > -1) links[idx].classList.add('active');
-    });
-  }, { rootMargin: '-45% 0px -50% 0px' });
-  sections.forEach(function (s) { if (s) spy.observe(s); });
-
-  document.getElementById('year').textContent = new Date().getFullYear();
+ var root=document.documentElement, button=document.getElementById('theme'), stored=null;
+ try { stored=localStorage.getItem('theme'); } catch(e) {}
+ function setTheme(t) {
+  root.setAttribute('data-theme',t);
+  document.querySelector('meta[name="theme-color"]').setAttribute('content',t==='dark'?'#0f0f0f':'#fafafa');
+  button.setAttribute('aria-label',t==='dark'?'Switch to light theme':'Switch to dark theme');
+  button.setAttribute('aria-pressed',String(t==='dark'));
+  document.getElementById('icon-path').setAttribute('d',t==='dark'?'M12 4v1m0 14v1m8-8h-1M5 12H4m13.7-5.7-.7.7M7 17l-.7.7m11.4 0-.7-.7M7 7l-.7-.7M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z':'M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z');
+ }
+ var dark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+ setTheme(stored==='light'||stored==='dark'?stored:(dark?'dark':'light'));
+ button.addEventListener('click',function(){var next=root.getAttribute('data-theme')==='dark'?'light':'dark';setTheme(next);try{localStorage.setItem('theme',next);}catch(e){}});
+ var header=document.getElementById('site-header');
+ function onScroll(){header.classList.toggle('scrolled',window.scrollY>8);}
+ onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+ if('IntersectionObserver' in window){
+  var links=Array.from(document.querySelectorAll('.nav a.link'));
+  var spy=new IntersectionObserver(function(entries){entries.forEach(function(e){if(!e.isIntersecting)return;links.forEach(function(l){var active=l.hash==='#'+e.target.id;l.classList.toggle('active',active);if(active)l.setAttribute('aria-current','location');else l.removeAttribute('aria-current');});});},{rootMargin:'-15% 0px -60% 0px'});
+  links.forEach(function(l){var section=document.querySelector(l.hash);if(section)spy.observe(section);});
+ }
+ document.getElementById('year').textContent=new Date().getFullYear();
 })();
 </script>
 </body>
