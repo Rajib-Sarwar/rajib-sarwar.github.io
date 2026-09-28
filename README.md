@@ -6,7 +6,7 @@ Personal portfolio for my work as a Senior iOS Engineer: mobile architecture, te
 
 ## Featured work
 
-- **Limosys:** mobile technical direction, client requirements, engineering mentorship, platform-team coordination, and a server-driven configuration pipeline across 200+ apps, reducing new-client deployment steps from 20 to 5.
+- **Limosys:** mobile technical direction, client requirements, engineering mentorship, platform-team coordination, and a server-driven configuration pipeline across 200+ apps, reducing new-client deployment steps from 20 to 5; Apple Pay, Google Pay, and Bluetooth triPOS payment integrations.
 - **DANA at NJIT:** mobile team leadership for the project recognized with the 2023 NJLA CUS/ACRL-NJ Technology Innovation Award.
 - **Qibrah:** independently built and launched iOS app using SwiftUI, AVFoundation, Live Activities, and Apple Speech. [App Store](https://apps.apple.com/us/app/qibrah/id6758562594).
 - **Affle / Shoffr and AnyConnect:** retail platforms, mobile SDKs, and connected-camera streaming.
